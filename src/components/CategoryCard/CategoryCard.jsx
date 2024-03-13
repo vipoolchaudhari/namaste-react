@@ -1,4 +1,5 @@
 import './CategoryCard.scss'
+import {img_url} from '../../utils/contants';
 
 
 const CategoryCard = ({info}) => {
@@ -8,7 +9,7 @@ const CategoryCard = ({info}) => {
         <div className='category-card'>
             <div className='icon-wrapper'>
                 <div className='category-number'>{count}</div>
-                <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/" + info.imageId}  alt={altText} />
+                <img src={img_url + info.imageId}  alt={altText} />
             </div>
             <h4 className='name'>{text}</h4>
             <p className='price'>From Rs {price}</p>
