@@ -1,0 +1,68 @@
+@import './variable.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Sunset-Gothic-Pro-light';
+    src: local('Sunset-Gothic-Pro'), url(../font/Sunset-Gothic-Pro-Light.ttf) format('truetype');
+}
+  
+@font-face {
+    font-family: 'Sunset-Gothic-Pro-regular';
+    src: local('Sunset-Gothic-Pro'), url(../font/Sunset-Gothic-Pro-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sunset-Gothic-Pro-semibold';
+    src: local('Sunset-Gothic-Pro'), url(../font/Sunset-Gothic-Pro-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sunset-Gothic-Pro-bold';
+    src: local('Lato'), url(../font/Sunset-Gothic-Pro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Sunset-Gothic-Pro-italic';
+    src: local('Sunset-Gothic-Pro'), url(../font/Sunset-Gothic-Pro-Italic.ttf) format('truetype');
+}
+
+body {
+    color:  $darkGrey;
+    font-family: "Sunset-Gothic-Pro-regular", Arial, serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* common */
+.container {
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+    @media (max-width: 768px) { 
+       padding: 0 1rem;
+    }
+}
+
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+.primary-btn {
+    padding: 0.75rem 2rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: $pink;
+    color: $white;
+    font-size: 1rem;
+    cursor: pointer;
+}

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is the React learning process for Vipool",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -16,7 +18,17 @@
   },
   "homepage": "https://github.com/vipoolchaudhari/namaste-react#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-slick": "^0.30.2",
+    "sass": "^1.71.1",
+    "slick-carousel": "^1.8.1"
+  }
 }

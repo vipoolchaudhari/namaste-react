@@ -1,0 +1,102 @@
+@import '../../assets/scss/variable.scss';
+
+.header-banner {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-color: $primaryGreen;
+    padding: 90px 0 0;
+
+    @media (max-width: 1200px) { 
+        padding: 0;
+    }
+
+    @media (max-width: 768px) { 
+        height: 600px;
+    }
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            user-select: none;
+            height: 340px;
+            width: 100%;
+            background-image: url(../../assets/img/banner-left-top.png);
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: contain;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            user-select: none;
+            height: 600px;
+            width: 100%;
+            background-image: url(../../assets/img/banner-right-bottom.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
+
+            @media (max-width: 1200px) { 
+                display: none;
+            }
+        }
+
+    .container {
+        height: 100%;
+    }
+    
+    .header-banner-content {
+        position: relative;
+        z-index: 1;
+        max-width: 550px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: 1200px) { 
+            margin: 0 auto;
+        }
+
+        p {
+            color: $lightOrange;
+            font-size: 28px;
+            font-family: $font-italic;
+            margin-bottom: 1.25rem;
+
+            @media (max-width: 768px) { 
+                font-size: 20px;
+                margin-bottom: 1rem;
+            }
+        }
+
+        h2 {
+            color: $white;
+            font-size: 60px;
+            line-height: 1.2;
+            font-family: $font-semibold;
+            margin-bottom: 3rem;
+
+            @media (max-width: 768px) { 
+                font-size: 40px;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .searchbox-wrapper {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
