@@ -1,5 +1,5 @@
 import './CategoryCard.scss'
-import {img_url} from '../../utils/contants';
+import {img_url} from '../../utils/constants';
 
 
 const CategoryCard = ({info}) => {
