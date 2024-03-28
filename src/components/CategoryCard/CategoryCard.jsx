@@ -1,15 +1,15 @@
 import './CategoryCard.scss'
-import {img_url} from '../../utils/constants';
+import {category_img} from '../../utils/constants';
 
 
-const CategoryCard = ({info}) => {
+const CategoryCard = ({info,onClickCategory}) => {
     const {count,text,price} = info?.action;
     const {altText} = info?.accessibility;
     return (
-        <div className='category-card'>
+        <div className='category-card' onClick={()=> {onClickCategory(text)}}>
             <div className='icon-wrapper'>
                 <div className='category-number'>{count}</div>
-                <img src={img_url + info.imageId}  alt={altText} />
+                <img src={category_img + info.imageId}  alt={altText} />
             </div>
             <h4 className='name'>{text}</h4>
             <p className='price'>From Rs {price}</p>

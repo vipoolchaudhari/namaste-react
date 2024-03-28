@@ -1,0 +1,32 @@
+@import '../../assets/scss/variable.scss';
+
+.restaurant-wrapper {
+    margin: 0 0 4rem;
+
+
+    .restaurant-card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-flow: row;
+        gap: 32px;
+
+        @media (max-width: 1200px) { 
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 768px) { 
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 32px 16px;
+        }
+
+        @media (max-width: 576px) { 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 32px 16px;
+        }
+    }
+
+    .restaurant-card-link {
+        text-decoration: none;
+        color: $darkGrey;
+    }
+}

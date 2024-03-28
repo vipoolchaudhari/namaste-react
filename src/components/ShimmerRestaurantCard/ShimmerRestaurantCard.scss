@@ -1,0 +1,27 @@
+@import '../../assets/scss/variable.scss';
+
+.shimmer-restaurant-card {
+    width: 100%;
+    
+
+
+    .img-wrapper {
+        height: 180px;
+        background-color: $blueGrey;
+    }
+
+    .details {
+        margin: 10px 0;
+    }
+
+    .box {
+        height: 20px;
+        background-color: $blueGrey;
+        margin-bottom: 10px;
+        width: 50%;
+
+        &-big {
+            width: 100%;
+        }
+    }
+}

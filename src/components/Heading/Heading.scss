@@ -13,12 +13,23 @@
         line-height: 1;
         margin-bottom: 1rem;
         display: inline-block;
+
+        @media (max-width: 768px) { 
+            padding: 0.4rem 0.75rem;
+            font-size: 0.6rem;
+            margin-bottom: 0.75rem;
+        }
     }
 
     .heading {
         font-size: 40px;
         font-family: $font-bold;
         text-transform: capitalize;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+
+        @media (max-width: 768px) { 
+            font-size: 20px;
+            margin-bottom: 1.5rem;
+        }
     }
 }

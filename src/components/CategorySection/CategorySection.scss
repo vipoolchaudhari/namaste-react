@@ -1,7 +1,6 @@
 @import '../../assets/scss/variable.scss';
 
 .category-wrapper {
-    padding: 4rem 0;
 
     .heading-wrapper {
         display: flex;
@@ -11,7 +10,6 @@
     }
 
     .category-card-wrapper{
-        margin-bottom: 3.5rem;
         padding-top: 2rem;
     }
 
@@ -23,12 +21,6 @@
         width: 34px;
         padding: 6px 8px;
         background: $lightGrey;
-
-        &.slick-disabled {
-            @media (min-width: 1240) { 
-                visibility: hidden;
-            }
-        }
 
         
 

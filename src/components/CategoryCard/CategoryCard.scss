@@ -9,12 +9,13 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in 0s;
 
     &:hover, &.active {
         background-color: $darkOrange;
         color:$white;
-        transform : scale(1.04);
+        transform : scale(1.04,1.04);
+        transform-origin: center center;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 
         .category-number {
@@ -58,6 +59,17 @@
         background-color: $lightGreen;
         color: $white;
         transition: all 0.2s ease-in-out;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 768px) { 
+            width: 30px;
+            height: 30px;
+            font-size: 0.8rem;
+        }
     }
 
     img {

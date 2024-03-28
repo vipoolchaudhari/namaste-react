@@ -1,0 +1,38 @@
+@import '../../assets/scss/variable.scss';
+
+
+.status-toggle-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: opacity .3s, transform .3s;
+    will-change: opacity, transform;
+    transform: translateY(100%);
+    opacity: 0;
+
+    &.active {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    
+
+    .status-toggle {
+        background-color: $darkBlue;
+        box-shadow: 0 3px 15px 0 rgba(40,44,63,.3);
+        color: $white;
+        padding: 0.75rem 0.9rem;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        font-family: $font-light;
+        max-width: 400px;
+        margin:  0 auto;
+        display: table;
+
+        .title {
+            font-family: $font-regular;
+            margin-bottom: 0.3rem;
+        }
+    }
+}

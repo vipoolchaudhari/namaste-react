@@ -1,10 +1,10 @@
 import './Heading.scss';
 
-const Heading = () => {
+const Heading = ({type,name}) => {
     return (
         <div className='heading-wrapper'>
-            <span className='heading-type'>Categories</span>
-            <h2 className='heading'>Popular Categories</h2>
+            <span className='heading-type'>{type}</span>
+            <h2 className='heading'>{name}</h2>
         </div>
     )
 }

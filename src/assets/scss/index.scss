@@ -57,6 +57,8 @@ input {
     }
 }
 
+
+/* Common Button */
 .primary-btn {
     padding: 0.75rem 2rem;
     border-radius: 0.6rem;
@@ -65,4 +67,14 @@ input {
     color: $white;
     font-size: 1rem;
     cursor: pointer;
+}
+
+
+/* Common Section */
+.section {
+    padding: 4rem 0 0;
+
+    @media (max-width: 768px) { 
+        padding: 2rem 0 0;
+    }
 }

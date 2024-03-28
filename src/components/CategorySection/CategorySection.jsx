@@ -4,7 +4,7 @@ import CategoryCard from '../CategoryCard/CategoryCard';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import imageGridCards from '../../utils/mockData'
+import data from '../../utils/mockData'
 
 function NextArrow(props) {
     const { className, style, onClick } = props;
@@ -28,7 +28,7 @@ function PrevArrow(props) {
 
 
 
-const CategorySection = () => {
+const CategorySection = ({onClickCategory}) => {
     let settings = {
         dots: false,
         infinite: false,
@@ -62,14 +62,15 @@ const CategorySection = () => {
             }
           ]
       };
+
     return (
-        <section className='category-wrapper'>
+        <section className='section category-wrapper'>
             <div className='container'>
-                < Heading/>
+                < Heading type="Categories" name="Popular Categories"/>
                 <Slider className='category-card-wrapper'  {...settings}>
                     {
-                      imageGridCards.info.map((info)=> {
-                        return <CategoryCard info={info} key={info.id} />
+                      data.imageGridCards.info.map((info)=> {
+                        return <CategoryCard info={info} key={info.id} onClickCategory={onClickCategory} />
                       })
                     }
                 </Slider>
